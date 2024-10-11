@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1021927600631",
+    "project_id": "jaipurtouch-aba75",
+    "storage_bucket": "jaipurtouch-aba75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021927600631:android:a7e0e56c44cf59f20d3ef2",
+        "android_client_info": {
+          "package_name": "com.jaipurtouchseller.jaipurtouchseller_vendor_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKfwn24EI1HjN7S-O8WGilFFWtSXB34aQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
