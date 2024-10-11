@@ -45,16 +45,16 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+    //  backgroundColor: Theme.of(context).primaryColor,
       body: Stack(
         clipBehavior: Clip.none, children: [
-        SizedBox(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
-          child: CustomPaint(
-            painter: SplashPainter(),
-          ),
-        ),
+        // SizedBox(
+        //   width: MediaQuery.of(context).size.width,
+        //   height: MediaQuery.of(context).size.height,
+        //   child: CustomPaint(
+        //     painter: SplashPainter(),
+        //   ),
+        // ),
 
         Center(
           child: Column(
@@ -62,7 +62,7 @@ class SplashScreenState extends State<SplashScreen> {
             children: [
               Hero(
                   tag:'logo',
-                  child: Image.asset(Images.whiteLogo, height: 80.0,
+                  child: Image.asset(Images.logo, height: 80.0,
                       fit: BoxFit.cover, width: 80.0)),
               const SizedBox(height: Dimensions.paddingSizeExtraLarge,),
               Text(AppConstants.appName, style: titilliumBold.copyWith(fontSize: Dimensions.fontSizeWallet,

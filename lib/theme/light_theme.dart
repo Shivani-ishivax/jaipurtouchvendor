@@ -2,31 +2,28 @@ import 'package:flutter/material.dart';
 
 ThemeData light = ThemeData(
   fontFamily: 'TitilliumWeb',
-  primaryColor: const Color(0xFF1455AC),
-  bottomSheetTheme: const BottomSheetThemeData(backgroundColor: Colors.transparent),
+  primaryColor: const Color(0xFFE5175D),
   brightness: Brightness.light,
   highlightColor: Colors.white,
   hintColor: const Color(0xFF9E9E9E),
-  disabledColor:  const Color(0xFF343A40),
-  canvasColor: const Color(0xFFFCFCFC),
-  colorScheme: const ColorScheme.light(
-
-    error: Color(0xFFFF5A5A),
-    primary: Color(0xFF1455AC),
+  colorScheme: const ColorScheme.light(primary: Color(0xFFE5175D),
     secondary: Color(0xFF004C8E),
     tertiary: Color(0xFFF9D4A8),
     tertiaryContainer: Color(0xFFADC9F3),
     onTertiaryContainer: Color(0xFF33AF74),
-    primaryContainer: Color(0xFF9AECC6),
-    secondaryContainer: Color(0xFFF2F2F2),
-    surface: Color(0xFF00FF58),
-    surfaceTint: Color(0xFF0087FF),
-    onPrimary: Color(0xFF67AFFF),
-    onSecondary: Color(0xFFFC9926)
-  ),
+    onPrimary: Color(0xFF7FBBFF),
+    background: Color(0xFFF4F8FF),
+    onSecondary: Color(0xFFF88030),
+    error: Color(0xFFFF5555),
+    onSecondaryContainer: Color(0xFFF3F9FF),
+    outline: Color(0xff2C66B4),
+    onTertiary: Color(0xFFE9F3FF),
+
+
+    primaryContainer: Color(0xFF9AECC6),secondaryContainer: Color(0xFFF2F2F2),),
 
   pageTransitionsTheme: const PageTransitionsTheme(builders: {
-    TargetPlatform.android: ZoomPageTransitionsBuilder(),
+    TargetPlatform.android: CupertinoPageTransitionsBuilder(),
     TargetPlatform.iOS: ZoomPageTransitionsBuilder(),
     TargetPlatform.fuchsia: ZoomPageTransitionsBuilder(),
   }),
