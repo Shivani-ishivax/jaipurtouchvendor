@@ -122,7 +122,7 @@ class OrderWidget extends StatelessWidget {
                           Row(children: [
 
 
-                            Text(orderModel.paymentMethod != null?getTranslated(orderModel.paymentMethod??'', context)!:'',
+                            Text(orderModel.paymentMethod != null?getTranslated(orderModel.paymentMethod??'', context).toString():'',
                                 style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeDefault, color: Theme.of(context).hintColor)),
                             const SizedBox(width: Dimensions.paddingSizeSmall),
                             SizedBox(height: Dimensions.iconSizeDefault, width: Dimensions.iconSizeDefault,

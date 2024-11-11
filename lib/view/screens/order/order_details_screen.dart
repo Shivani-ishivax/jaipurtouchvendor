@@ -106,7 +106,8 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
 
               return order.orderDetails != null ? order.orderDetails!.isNotEmpty ?
               ListView(
-                physics: const BouncingScrollPhysics(),
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
                 children: [
 
                   OrderTopSection(orderModel: widget.orderModel, order: order, orderType: widget.orderType, onlyDigital: _onlyDigital,),

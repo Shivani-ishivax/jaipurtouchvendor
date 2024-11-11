@@ -85,7 +85,7 @@ class OrderTopSection extends StatelessWidget {
                 padding: const EdgeInsets.only(right: Dimensions.paddingSizeSmall),
                 child: Image.asset(Images.paymentIcon,width: Dimensions.iconSizeSmall, ),
               ),
-              Text(getTranslated(orderModel!.paymentMethod, context)!,
+              Text(getTranslated(orderModel!.paymentMethod, context).toString(),
                   style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeDefault)),
             ],
           ),
