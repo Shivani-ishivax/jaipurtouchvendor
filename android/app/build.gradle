@@ -39,6 +39,7 @@ android {
     }
     namespace "com.jaipurtouchseller.jaipurtouchseller_vendor_app"
     compileOptions {
+        coreLibraryDesugaringEnabled true
         sourceCompatibility JavaVersion.VERSION_17 // Match with Kotlin
         targetCompatibility JavaVersion.VERSION_17 // Match with Kotlin
     }
@@ -87,4 +88,5 @@ flutter {
 dependencies {
    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.google.firebase:firebase-messaging:21.0.1"
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
 }
